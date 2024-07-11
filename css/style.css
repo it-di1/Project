@@ -1,0 +1,45 @@
+body {
+  /*background-image: url("../img/bk.jpg");*/
+
+}
+
+#name{
+    margin-top: 0px;
+    color: rgb(18, 18, 18);
+
+    font-weight: bolder;
+    font-size: 80px;
+}
+topnav {
+    background-color: #333333;
+    overflow: hidden;
+  }
+  
+
+  .topnav a {
+   float: right;
+   margin-top: 0px;
+    color:rgb(24, 16, 239);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddddddbe;
+    color: black;
+    
+  }
+  
+
+  .topnav a.active {
+    background-color: #01005a;
+    color: white;
+  }
+
+#sum {
+    color: #5e5757;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
