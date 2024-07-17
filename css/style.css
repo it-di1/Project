@@ -14,7 +14,7 @@
   height: 80px;
   width: 100%;
   padding: 35px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -24,23 +24,56 @@
 }
 
 
-.container{
+.container-fluid{
 
   margin-top: 80px;
-  width: 100%;
+  margin-left: 0;
+  width: 200%;
   font-size: 30px;
   min-height: 100hv;
-  background: rgba(62, 81, 86);
+  background: rgb(3, 20, 48);
   display: flex;
+  color: black;
+  font-weight: 600;
   align-items: center;
-  gap: 7em;
-  padding: 30px 12% 200px;
+   gap: 7em;  
+  padding-bottom: 115px;
   
    }
 
+   .home-content{
+    padding-left: 60px;
+    font-weight: 600;
+   }
+   .home-content h1{
+    color: black;
+    font-weight: 600;
+   } 
+
+   .mode{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  body.dark {
+    background-color: black;
+    color: white;
+
+  }
+  
+
+  body.dark * {
+    color: inherit;  
+    background-color: inherit;
+  }
+
 #hl{
   color: white;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: 600;
+
 }
 .logo {
   font-size: 25px;
@@ -49,7 +82,7 @@
   transition: 0.3s ease; 
 }
  .logo:hover {
-  color: rgb(62, 81, 86);
+  color: rgb(2, 23, 56);
   text-shadow: 0 0 15px rgb(46, 46, 46),
                0 0 40px rgb(46, 46, 46);
   transform: scale(1.1);
@@ -57,7 +90,7 @@
  }
 
  span{
-   color: rgb(62, 81, 86);;
+   color:rgb(2, 23, 56);
    
  }
 
@@ -74,22 +107,14 @@
  .navbar a:hover,
  .navbar a.active {
 
-color:rgb(62, 81, 86);;
-border-bottom: 3px solid rgb(62, 81, 86);;
+color:rgb(2, 23, 56);
+border-bottom: 3px solid rgb(2, 23, 56);
  }
 
- .contact {
-  padding: 10px 28px;
-  background-color: white;
-  color: black;
-  border: 2px solid transparent;
-  font-size:16px ;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: 0.3s ease;
- }
 
- .contact:hover{
+
+
+ .btn-contact:hover{
   background-color: white;
   box-shadow: 0 0 70px rgb(46, 46, 46);
   color: rgb(46, 46, 46)
@@ -118,7 +143,7 @@ border-bottom: 3px solid rgb(62, 81, 86);;
     width: 0;
   } 
   100%{
-   width: 59%;
+   width: 45%;
   }
  }
 
@@ -132,22 +157,38 @@ border-bottom: 3px solid rgb(62, 81, 86);;
 
 #btn{
   padding: 10px 20px;
-  background-color: white;
-  border: 2px solid black;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
   border-radius: 8px;
 font-size: 18px;
 letter-spacing: 1px;
 font-weight: 600;
 }
 
-.btn1:hover{
+#btn:hover{
   background-color: white;
-  color:rgb(62, 91, 99);
+  color:rgb(2, 23, 56);
+}
+#btn-contact{
+  padding: 10px 20px;
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 600;
+}
+#btn-contact:hover{
+  background-color: white;
+  color:rgb(2, 23, 56);
 }
 
 .img-box img{
   border-radius: 70%;
   width: 300px;
+  margin-top: 50px;
 
 }
 h3{
@@ -157,11 +198,11 @@ h3{
 .summary{
   font-size: 20px;
 }
-#edu{
+.edu{
   margin-top: 0px;
-  width: 100%;
+  width: 210vh;
   min-height: 10hv;
-  background:  rgba(0, 0, 0,0.9);
+  background-color:  dimgray;
   gap: 40em;
   padding: 200px 12% 200px;
   
@@ -178,8 +219,8 @@ h3{
    }
    #edu-info:hover{
 
-    text-shadow: 0 0 15px  rgb(120, 130, 130),
-  0 0 40px rgb(120, 130, 130);
+    text-shadow: 0 0 15px  rgb(35, 36, 36),
+  0 0 40px rgb(35, 36, 36);
   transform: scale(1.1);
    }
 
@@ -198,17 +239,17 @@ h3{
   
     }
     .skill:hover{
-      text-shadow: 0 0 15px rgb(120, 130, 130),
-  0 0 40px rgb(120, 130, 130);
+      text-shadow: 0 0 15px rgb(35, 36, 36),
+  0 0 40px rgb(35, 36, 36);
   transform: scale(1.1);
     }
-#sk{
+.sk{
 
   margin-top:0px;
   color: white;
-  width: 100%;
-  min-height: 100hv;
-  background:  rgba(0, 0, 0,0.9);
+  width: 210vh;
+  min-height: 100vh;
+  background:  dimgray;
   display: flex;
   align-items: center;
   gap: 7em;
@@ -222,7 +263,7 @@ h3{
       width: 15px;
      }
      ::-webkit-scrollbar-thumb{
-      background-color: rgb(62, 81, 86);
+      background-color: rgb(2, 23, 56);
      }
      ::-webkit-scrollbar-track{
       background-color: rgba(0, 0, 0, 0.6);
@@ -233,13 +274,13 @@ h3{
       font-family: "Arial", Helvetica, sans-serif;
       font-weight: 600;
      }
-     #other{
+     .other{
       
       margin-top:0px;
       color: white;
-      width: 100%;
+      width: 210vh;
       min-height: 100hv;
-      background: rgba(0, 0, 0,0.9);
+    background-color: dimgray;
       display: flex;
       align-items: center;
       gap: 7em;
@@ -248,8 +289,9 @@ h3{
    }
 
    .heds{
-    color: white;
+    color: rgba(0, 0, 0,0.6);
     font-size: 50px;
+    font-weight: 600;
     
    }
     
@@ -260,23 +302,23 @@ h3{
     transition: 0.3s ease; 
    }
    #other-list:hover{
-    text-shadow: 0 0 15px rgb(120, 130, 130),
-  0 0 40px rgb(120, 130, 130);
+    text-shadow: 0 0 15px rgb(35, 36, 36),
+  0 0 40px rgb(35, 36, 36);
   transform: scale(1.1);
    }
 
    #other-h{
-    color:rgb(62, 91, 99);
+    color:rgb(2, 23, 56);
     font-size: 30px;
     font-weight: 600;
 
    }
-   #ex{
+   .ex{
       
     margin-top:0px;
-    width: 100%;
-    min-height: 100hv;
-    background: rgba(0, 0, 0,0.9);
+    width: 210vh;
+    min-height: 100vh;
+    background: dimgray;
     display: flex;
     align-items: center;
     align-content: center;
@@ -284,21 +326,66 @@ h3{
     padding: 200px 12% 200px;
     
  }
+ .ex h2{
+  margin-bottom:30% ;
+  font-weight: 600;
+  font-size: 50px;
+ }
+ 
 
- #ex-list{
-  color: rgb(62, 91, 99);
-padding-top: 70px;
-font-size: 27px;
-transition: 0.3s ease; 
+ .timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative; 
 }
-#ex-list:hover{
-  text-shadow: 0 0 15px  rgb(93, 98, 98),
-  0 0 40px  rgb(102, 106, 106);
-  transform: scale(1.1);
 
+.timeline li {
+  display: inline-block;
+  width: 45%; 
+  margin-bottom:100px; 
+  text-align: left;
 }
+
+.timeline li.left {
+  text-align: right; 
+  font-size: 20px;
+  transition: 0.3s ease; 
+}
+
+.timeline li.right {
+ font-size: 20px;
+  text-align: left;
+  padding-left: 50px; 
+  transition: 0.3s ease;
+}
+
+.timeline::after {
+  content: "";
+  display: block;
+  height: 400px; 
+  width: 4px; 
+  background-color: rgb(2, 23, 56); 
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); 
+  top: 0; 
+}
+.timeline li.right:hover{
+  text-shadow: 0 0 15px rgb(35, 36, 36),
+0 0 40px rgb(35, 36, 36);
+transform: scale(1.1);
+ }
+ .timeline li.left:hover{
+  text-shadow: 0 0 15px rgb(35, 36, 36),
+0 0 40px rgb(35, 36, 36);
+transform: scale(1.1);
+ }
+ 
+
+
 .contact-form{
-  background-color:rgba(0, 0, 0,0.9);
+  background-color:dimgray;
   margin-top:0;
   margin-bottom:0 ;
   padding-top: 6rem;
@@ -340,9 +427,9 @@ padding-bottom: 4em
  }
 .footer{
   position: relative;
-  width: 100%;
+  width: 210vh;
   padding: 20px 0;
-  background-color: rgba(0, 0, 0,0.9);
+  background-color: dimgray;
 
 }
  .footer .social{
@@ -361,4 +448,15 @@ padding-bottom: 4em
   margin: 0 2px;
   
 
+ }
+ .other a{
+  color: white;
+  border:2px solid rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 2px;
  }
