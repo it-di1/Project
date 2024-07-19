@@ -19,13 +19,14 @@
         <nav class="navbar">
 
             <a href="#" class="active">Portfoilo</a>
-            <a href="#edu">Education</a>
-            <a href="#sk">Skills</a>
-            <a href="#other">Other</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#others">Other</a>
             
         </nav>
         <button id="mode">Dark/light</button>
     </header>
+
     <section class="container-fluid">
         <div class="home-content">
             <h3 id="hl">Hello</h3>
@@ -36,7 +37,7 @@
                 to the fast paced world of Technology.</p></div>
                 
                 <div class="btn-box">
-                    <a href="#ex">
+                    <a href="#projects">
                  <button id="btn">Projects </button>
                  <a href="#contact-form" ><button id="btn-contact">Contact me</button></a> 
                 </a>
@@ -50,66 +51,76 @@
     </section>
 
 
-    <section class="edu">
+    <section class="edu" id="education">
          <div class="home-content"> 
             <h3 class="heds">Education</h3>
             <h1><span>Qassim University</span></h1>
-            <p id="edu-info">Bachelor's Degree in Information Technology<br>
+            <p id="edu-info">Bachelor's Degree in Information Technology
                 Anticipated(2020-2025)</p>
                 
 
         </div></section>
 
-        <section class="sk">
-      
+        <section class="sk" id="skills">
+            <div class="home-content">
                 <h3 class="heds">Skills</h3>
-                <div class="skill">
-                <h1><span>Technical skills</span></h1>
-                <ul>
-                    <li>SQL</li>
-                    <li>Software engineering</li>
-                    <li>Object oriented programming</li>
-                    <li>Web development</li>
-                    </div>
-                    <div class="skill">
+              <h1><span>Technical skills</span></h1>
+              <ul class="skill-list">
+                <li>SQL</li>
+                <li> Software engineering</li>
+                <li>Object oriented programming</li>
+                <li>Web development</li>
+              </ul>
+                              
+                    
                     <h1><span>Soft skills</span></h1>
-                    <ul>
-                        <li>Highly Organaized with strong communication skills </li>
-                        <li>Ability to work independently and as a part of a team</li>
-                        <li>Detail oriented and able to handle multiple tasks simultanously</li>
-                        <li>Adapting to new situations and finding creative solutions</li>
+                    <ul class="skill-list">
+                        <li>Ability to work independently and as a part of a team</li                            >
+                       <li> Detail oriented and able to handle multiple tasks simultanously</li>
+                      <li>Adapting to new situations and finding creative solutions</li>
+                       <li>Highly Organaized with strong communication skills </li>
                     </ul>
     </div>
-            </div></section>
+            </section>
 
-            <section class="ex">
-                <h2>Projects</h2>
-              
-                <ul class="timeline">
-                  <li class="left">Twallam traveling application</li>
-                  <li class="right">Computer college library Database</li>
-                  <li class="left">Information system analysis and design</li>
-                  <li class="right">Game development</li>
-                  <li class="left">LifeLog andriod application</li>
-                </ul>
+            <section class="ex" id="projects">
+
+                <div class="home-content">
+                    <h2 class="heds">Projects</h2> 
+                    <ul class="project-list">
+                     <li>Twallam traveling application</li>
+                     <li>Computer college library Database</li>
+                     <li>Information system analysis and design</li>
+                     <li>Game development</li>
+                     <li>LifeLog andriod application</li>
+                     <li>Coffee shop website</li>
+                    
+                    </ul>      
+            
+                </div>
               </section>
 
 
-            <section class="other">
-                <div class="home-content">
+            <section class="other" id="others">
+              <div class="home-content">
                     <h3 class="heds">Other</h3>
-                      <ul id="other-list">
-                        <li><h3 id="other-h">Certifications:</h3> Harvard University "Introduction to Artificial Intellegence(Click icon to view). 
-                          <a href="file:///C:/Users/Dana/Desktop/Certificates/HarvardX%20CS50AI%20Certificate%20_%20edX.pdf" target="_blank">  <i class='bx bx-certification'></i></a></li>
-                        <li><h3 id="other-h">Languages:</h3>Arabic(native),English(Advanced).</li>
-                        </ul>
+                    
+                    <h2>Certifications</h2>
+                    <h3 class="other-info"> Harvard University "Introduction to Artificial Intellegence(Click icon to view).
+                    <a href="file:///C:/Users/Dana/Desktop/Certificates/HarvardX%20CS50AI%20Certificate%20_%20edX.pdf" 
+                    target="_blank">  <i class='bx bx-certification'></i></a></li></h3>
+                      <h2>Languages</h2>
+                      <h3 class="other-info">Arabic(native),Advanced English</h3>
                         
-        
+           
                 </div></section>
 
-           <section class="contact-form" id="contact-form">
+           <section 
+            class="contact-form" id="contact-form">
+            <h1>للتواصل والاستفسار</h1>
+            
                  
-                    <h2 class="contact-me" >للتواصل <span>والاستفسار</span></h2>
+                
 
                   <form action="#">
                     <div class="input-box">
@@ -119,7 +130,7 @@
 
 
                     </div>
-                    <textarea id="" class="form-control"
+                    <textarea  class="form-control"
                     cols="30" rows="6" placeholder="للاستفسارات يرجى كتابة الرساله هنا">
                     </textarea>
                     <input  type="submit" value="إرسال">
