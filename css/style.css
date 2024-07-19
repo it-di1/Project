@@ -167,8 +167,14 @@ body {
   
 
   body.dark * {
-    color: inherit;  
-    background-color: inherit;
+    color: white;  
+    background-color: black;
+  }
+  body.dark #edu-info{
+    color: white;
+  }
+  body.dark .other-info{
+    color: white;
   }
     .heds{
         color:rgb(6, 36, 40);
@@ -312,4 +318,9 @@ body {
     transform: scale(1.1);
   
    }
+
+   #contact-form{
+    background-color: rgb(94, 94, 94);
+    
+   } 
    
